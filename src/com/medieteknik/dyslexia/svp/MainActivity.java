@@ -1,6 +1,6 @@
 package com.medieteknik.dyslexia.svp;
 
-import com.example.svp.R;
+import com.medieteknik.dyslexia.svp.R;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends Activity {
-	public final static String EXTRA_MESSAGE ="com.example.svp.MESSAGE";
+	public final static String EXTRA_MESSAGE ="com.medieteknik.dyslexia.svp.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

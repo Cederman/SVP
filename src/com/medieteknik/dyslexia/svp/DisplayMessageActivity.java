@@ -1,6 +1,6 @@
 package com.medieteknik.dyslexia.svp;
 
-import com.example.svp.R;
+import com.medieteknik.dyslexia.svp.R;
 
 import android.app.Activity;
 import android.content.Intent;

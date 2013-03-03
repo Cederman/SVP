@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.svp;
+package com.medieteknik.dyslexia.svp;
 
 public final class R {
     public static final class attr {
