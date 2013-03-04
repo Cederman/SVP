@@ -1,27 +1,32 @@
 package com.medieteknik.dyslexia.svp;
 
-import com.medieteknik.dyslexia.svp.R;
-
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
-	public final static String EXTRA_MESSAGE ="com.medieteknik.dyslexia.svp.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
     
-    public void sendMessage(View view) {
-    	Intent intent = new Intent(this, DisplayMessageActivity.class);
-    	EditText editText = (EditText) findViewById(R.id.edit_message);
-    	String message = editText.getText().toString();
-    	intent.putExtra(EXTRA_MESSAGE, message);
-    	startActivity(intent);
-    }
+    String s = "This is a sample sentence.";
+    final String[] words = s.split("\\s+");
+        
+    Button b = (Button) findViewById(R.id.next_button);
+
+    b.setOnClickListener(new OnClickListener() {
+       @Override
+       public void onClick(View v) {
+           TextView tx = (TextView) findViewById(R.id.text_box);
+           StringBuilder builder = new StringBuilder();
+           for (String s : words){
+             builder.append(s+" ");
+           tx.setText(builder.toString());
+       }
+    }});
     
-}
+}}
