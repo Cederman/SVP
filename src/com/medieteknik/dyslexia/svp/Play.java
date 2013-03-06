@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class Play extends Activity {
 
     int counter;
-    String s = "SŒŒŒŒŒŒŒŒ hŠr lite grann efter Hugo Chavez dšd Šr det tvŒ personer som pekas ut som mŠktigast bland arvtagarna. Den ene en fšre detta busschauffšr och fackfšreningsman med stark vŠnsterideologisk profil. Den andre en pragmatisk och vŠlbŠrgad ingenjšr med ett fšrflutet inom militŠren.";
+    String s = "SÃ¥ hÃ¤r lite grann efter Hugo Chavez dÃ¶d Ã¤r det tvÃ¥ personer som pekas ut som mÃ¤ktigast bland arvtagarna. Den ene en fÃ¶re detta busschauffÃ¶r och fackfÃ¶reningsman med stark vÃ¤nsterideologisk profil. Den andre en pragmatisk och vÃ¤lbÃ¤rgad ingenjÃ¶r med ett fÃ¶rflutet inom militÃ¤ren.";
     final String[] words = s.split("\\s+");
 	
 	@Override
