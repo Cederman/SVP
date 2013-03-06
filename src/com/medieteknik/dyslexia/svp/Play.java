@@ -23,36 +23,34 @@ public class Play extends Activity {
 		// Show the Up button in the action bar.
 		setupActionBar();
 		
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         final TextView tx = (TextView) findViewById(R.id.text_box);
         counter = 0;
         tx.setText(words[counter]+" "+words[counter+1]+" "+words[counter+2]);
         
-    Button b = (Button) findViewById(R.id.next_button);
+        Button b = (Button) findViewById(R.id.next_button);
 
-    b.setOnClickListener(new OnClickListener() {
-       @Override
-       public void onClick(View v) {
-    	   try{
-    		   counter+=3;
-    		   
-    		   if(words[counter]!=null & words[counter+1]!=null & words[counter+2]!=null){
-    			   tx.setText(words[counter]+" "+words[counter+1]+" "+words[counter+2]);
-    		   }
-    		   else if(words[counter]!=null & words[counter+1]!=null){
-    			   tx.setText(words[counter]+" "+words[counter+1]);
-    		   }
-    		   else{
-    			   tx.setText(words[counter]);
-    		   }
-    	   }
-    	   catch( ArrayIndexOutOfBoundsException e){
-    		   tx.setText("End of text =(");
-    	   }
-       }
+        b.setOnClickListener(new OnClickListener() {
+       	@Override
+       	public void onClick(View v) {
+       		try{
+       			counter+=3;
+		   
+       			if(words[counter]!=null & words[counter+1]!=null & words[counter+2]!=null){
+       				tx.setText(words[counter]+" "+words[counter+1]+" "+words[counter+2]);
+       			}
+       			else if(words[counter]!=null & words[counter+1]!=null){
+       				tx.setText(words[counter]+" "+words[counter+1]);
+       			}
+       			else {
+       				tx.setText(words[counter]);
+       			}
+       		}
+       		catch( ArrayIndexOutOfBoundsException e){
+       			tx.setText("End of text =(");
+       		}
+       	}
     });
-	}
+}
 
 	/**
 	 * Set up the {@link android.app.ActionBar}.
