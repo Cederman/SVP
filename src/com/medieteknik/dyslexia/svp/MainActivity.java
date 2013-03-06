@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
   
     int counter;
-    String s = "Iphone swag fanny pack, try-hard master cleanse pop-up elit deserunt vinyl. Odio mustache hoodie YOLO fap. Vegan godard labore tempor. Farm-to-table aute craft beer, YOLO bicycle rights artisan semiotics. Cosby sweater readymade eiusmod consectetur fap stumptown. Cliche keytar accusamus blue bottle, wayfarers locavore selfies elit aliqua chillwave lo-fi helvetica enim. Irony tofu blog, fap pickled pariatur odio wolf cliche vice sint pitchfork eiusmod cosby sweater polaroid.";
+    String s = "Efter Hugo Chavez död är det två personer som pekas ut som mäktigast bland arvtagarna. Den ene en före detta busschaufför och fackföreningsman med stark vänsterideologisk profil. Den andre en pragmatisk och välbärgad ingenjör med ett förflutet inom militären.";
     final String[] words = s.split("\\s+");
     
     @Override
