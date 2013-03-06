@@ -27,8 +27,8 @@ public class Play extends Activity {
         counter = 0;
         tx.setText(words[counter]+" "+words[counter+1]+" "+words[counter+2]);
         
-        Button b = (Button) findViewById(R.id.next_button);
-
+        /*Button b = (Button) findViewById(R.id.next_button);
+        
         b.setOnClickListener(new OnClickListener() {
        	@Override
        	public void onClick(View v) {
@@ -50,6 +50,7 @@ public class Play extends Activity {
        		}
        	}
     });
+    */
 }
 
 	/**
