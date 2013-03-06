@@ -9,5 +9,7 @@
     <string name="title_activity_text_navigation">TextNavigationActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_play">Play</string>
+    <string name="button_nav_go">Nav</string>
+    <string name="button_play_go">Play</string>
 
 </resources>
