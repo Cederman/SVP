@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
   
     int counter;
-    String s = "efter Hugo Chavez död är det två personer som pekas ut som mäktigast bland arvtagarna. Den ene en före detta busschaufför och fackföreningsman med stark vänsterideologisk profil. Den andre en pragmatisk och välbärgad ingenjör med ett förflutet inom militären.";
+    String s = "Efter Hugo Chavez d√∂d √§r det tv√• personer som pekas ut som m√§ktigast bland arvtagarna. Den ene en f√∂re detta busschauff√∂r och fackf√∂reningsman med stark v√§nsterideologisk profil. Den andre en pragmatisk och v√§lb√§rgad ingenj√∂r med ett f√∂rflutet inom milit√§ren.";
     final String[] words = s.split("\\s+");
     
     @Override
@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         final TextView tx = (TextView) findViewById(R.id.text_box);
         counter = 0;
-        tx.setText(words[counter]);
+        tx.setText(words[counter]+" "+words[counter+1]+" "+words[counter+2]);
         
     Button b = (Button) findViewById(R.id.next_button);
 
@@ -27,8 +27,17 @@ public class MainActivity extends Activity {
        @Override
        public void onClick(View v) {
     	   try{
-    		   counter++;
-               tx.setText(words[counter]);   
+    		   counter+=3;
+    		   
+    		   if(words[counter]!=null & words[counter+1]!=null & words[counter+2]!=null){
+    			   tx.setText(words[counter]+" "+words[counter+1]+" "+words[counter+2]);
+    		   }
+    		   else if(words[counter]!=null & words[counter+1]!=null){
+    			   tx.setText(words[counter]+" "+words[counter+1]);
+    		   }
+    		   else{
+    			   tx.setText(words[counter]);
+    		   }
     	   }
     	   catch( ArrayIndexOutOfBoundsException e){
     		   tx.setText("End of text =(");
