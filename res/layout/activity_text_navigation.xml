@@ -9,8 +9,20 @@
     tools:context=".TextNavigationActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="135dp"
+        android:text="@string/button_play_go" 
+        android:onClick="startPlay" />
 
 </RelativeLayout>

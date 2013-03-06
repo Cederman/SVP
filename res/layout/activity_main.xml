@@ -17,13 +17,12 @@
         android:maxLines="1" />
 
     <Button
-        android:id="@+id/next_button"
+        android:id="@+id/nav_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/next"
-        android:onClick="nextLine"
-        android:textSize="15sp" />
+        android:layout_below="@+id/text_box"
+        android:layout_toRightOf="@+id/text_box"
+        android:text="@string/button_nav_go" 
+        android:onClick="startTextNavigation" />
 
 </RelativeLayout>
