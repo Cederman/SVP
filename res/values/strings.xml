@@ -2,13 +2,9 @@
 <resources>
 
     <string name="app_name">SVP Reader</string>
-    <string name="edit_message">Enter a message</string>
-    <string name="button_send">Send</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_display_message">My Message</string>
     <string name="action_settings">Settings</string>
-    <string name="next">Next</string>
-    <string name="lorem_ipsum">Iphone swag fanny pack, try-hard master cleanse pop-up elit deserunt vinyl. Odio mustache hoodie YOLO fap. Vegan godard labore tempor. Farm-to-table aute craft beer, YOLO bicycle rights artisan semiotics. Cosby sweater readymade eiusmod consectetur fap stumptown. Cliche keytar accusamus blue bottle, wayfarers locavore selfies elit aliqua chillwave lo-fi helvetica enim. Irony tofu blog, fap pickled pariatur odio wolf cliche vice sint pitchfork eiusmod cosby sweater polaroid.</string>
+    <string name="next">Proceed</string>
 
 </resources>

@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
   
     int counter;
-    String s = "Efter Hugo Chavez död är det två personer som pekas ut som mäktigast bland arvtagarna. Den ene en före detta busschaufför och fackföreningsman med stark vänsterideologisk profil. Den andre en pragmatisk och välbärgad ingenjör med ett förflutet inom militären.";
+    String s = "efter Hugo Chavez död är det två personer som pekas ut som mäktigast bland arvtagarna. Den ene en före detta busschaufför och fackföreningsman med stark vänsterideologisk profil. Den andre en pragmatisk och välbärgad ingenjör med ett förflutet inom militären.";
     final String[] words = s.split("\\s+");
     
     @Override

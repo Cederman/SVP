@@ -14,8 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="50sp"
-        android:maxLines="1"
-        android:text="@string/lorem_ipsum" />
+        android:maxLines="1" />
 
     <Button
         android:id="@+id/next_button"
@@ -25,6 +24,6 @@
         android:layout_centerVertical="true"
         android:text="@string/next"
         android:onClick="nextLine"
-        android:textSize="20sp" />
+        android:textSize="15sp" />
 
 </RelativeLayout>
