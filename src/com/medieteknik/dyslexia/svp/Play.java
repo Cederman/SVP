@@ -1,19 +1,57 @@
 package com.medieteknik.dyslexia.svp;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class Play extends Activity {
 
+    int counter;
+    String s = "SŒŒŒŒŒŒŒŒ hŠr lite grann efter Hugo Chavez dšd Šr det tvŒ personer som pekas ut som mŠktigast bland arvtagarna. Den ene en fšre detta busschauffšr och fackfšreningsman med stark vŠnsterideologisk profil. Den andre en pragmatisk och vŠlbŠrgad ingenjšr med ett fšrflutet inom militŠren.";
+    final String[] words = s.split("\\s+");
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_play);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        final TextView tx = (TextView) findViewById(R.id.text_box);
+        counter = 0;
+        tx.setText(words[counter]+" "+words[counter+1]+" "+words[counter+2]);
+        
+    Button b = (Button) findViewById(R.id.next_button);
+
+    b.setOnClickListener(new OnClickListener() {
+       @Override
+       public void onClick(View v) {
+    	   try{
+    		   counter+=3;
+    		   
+    		   if(words[counter]!=null & words[counter+1]!=null & words[counter+2]!=null){
+    			   tx.setText(words[counter]+" "+words[counter+1]+" "+words[counter+2]);
+    		   }
+    		   else if(words[counter]!=null & words[counter+1]!=null){
+    			   tx.setText(words[counter]+" "+words[counter+1]);
+    		   }
+    		   else{
+    			   tx.setText(words[counter]);
+    		   }
+    	   }
+    	   catch( ArrayIndexOutOfBoundsException e){
+    		   tx.setText("End of text =(");
+    	   }
+       }
+    });
 	}
 
 	/**
