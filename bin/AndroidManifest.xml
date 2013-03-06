@@ -22,6 +22,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.medieteknik.dyslexia.svp.TextNavigationActivity"
+            android:label="@string/title_activity_text_navigation"
+            android:parentActivityName="com.medieteknik.dyslexia.svp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.medieteknik.dyslexia.svp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.medieteknik.dyslexia.svp.Play"
+            android:label="@string/title_activity_play"
+            android:parentActivityName="com.medieteknik.dyslexia.svp.TextNavigationActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.medieteknik.dyslexia.svp.TextNavigationActivity" />
+        </activity>
     </application>
 
 </manifest>
